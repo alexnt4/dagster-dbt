@@ -6,9 +6,10 @@ import requests
 from dagster_duckdb import DuckDBResource
 from smart_open import open
 
-from dagster_and_dbt.defs.assets import constants
 from dagster_and_dbt.defs.partitions import monthly_partition
 from dagster_and_dbt.defs.resources import smart_open_config
+
+from . import constants
 
 
 @dg.asset(
